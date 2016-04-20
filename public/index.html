@@ -129,6 +129,7 @@ Spotify.prototype.search = function(name) {
 };
 
 Spotify.prototype.onSearchDone = function(artist) {
+    console.log(artist)
     var result = $(this.artistTemplate(artist));
     this.result.empty().append(result);
     this.result.toggleClass('transparent');
